@@ -4,14 +4,17 @@
   "description": "Basic web app using NodeJS and Express",
   "main": "App.js",
   "scripts": {
-    "start": "node src/App",
+    "start": "node App",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cm": "git-cz"
   },
   "author": "Sam Frier",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "bootstrap": "^4.3.1",
+    "express": "^4.16.4",
+    "jquery": "^3.4.1",
+    "startbootstrap-agency": "^5.1.0"
   },
   "devDependencies": {
     "commitizen": "^3.1.1",
