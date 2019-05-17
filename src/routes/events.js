@@ -75,10 +75,10 @@ eventRouter.route("/").get((req, res) => {
     nav: [
       { link: "/#services", text: "Services" },
       { link: "/#portfolio", text: "Portfolio" },
-      { link: "/#about", text: "About" },
-      { link: "/#team", text: "Team" },
-      { link: "/#contact", text: "Contact" },
-      { link: "#events", text: "Events" }
+      { link: "#events", text: "Events" },
+      { link: "/about#about", text: "About" },
+      { link: "/about#team", text: "Team" },
+      { link: "#contact", text: "Contact" }
     ],
     events: eventsData
   })
@@ -90,10 +90,10 @@ eventRouter.route("/:id").get((req, res) => {
     nav: [
       { link: "/#services", text: "Services" },
       { link: "/#portfolio", text: "Portfolio" },
-      { link: "/#about", text: "About" },
-      { link: "/#team", text: "Team" },
-      { link: "/#contact", text: "Contact" },
-      { link: "/events", text: "Events" }
+      { link: "/events", text: "Events" },
+      { link: "/about#about", text: "About" },
+      { link: "/about#team", text: "Team" },
+      { link: "#contact", text: "Contact" }
     ],
     event: eventsData[id]
   })
