@@ -4,7 +4,7 @@ const config = require("./config/config.json")
 const port = config.port
 const app = express()
 
-app.use(express.static("src/views"))
+app.use(express.static("dist"))
 app.use(express.static("node_modules"))
 app.use(express.static("node_modules/startbootstrap-agency"))
 
