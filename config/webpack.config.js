@@ -10,9 +10,9 @@ module.exports = {
     new CopyWebpackPlugin([]),
     new HtmlWebpackPlugin({
       inject: false,
-      filename: "./index.html",
-      template: "./src/views/index.html",
-      title: "Hello Webpack"
+      filename: "./index.ejs",
+      template: "./src/views/index.ejs",
+      title: "Hello from Webpack"
     })
   ]
 }
