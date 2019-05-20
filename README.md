@@ -1,6 +1,11 @@
 # nodejs-example-app
 
-Basic web app using NodeJS and Express.
+Basic web app using Node.js and Express.
+
+## Requirements
+
+- Node + npm
+- Docker
 
 ## Getting Started
 
@@ -33,3 +38,5 @@ Note: this is an example app meant to be run locally and as such the endpoints h
 ## Credits
 
 Uses Bootstrap template [Agency](https://startbootstrap.com/themes/agency/).
+
+Adapted from the course ["Fundamentals of Node.js"](https://www.oreilly.com/library/view/fundamentals-of-nodejs/100000006A0428/) by Stone River eLearning on O'Reilly.
