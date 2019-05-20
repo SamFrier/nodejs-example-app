@@ -17,8 +17,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       filename: "./event.ejs",
-      template: "./src/views/event.ejs",
-      title: "Event from Webpack"
+      template: "./src/views/event.ejs"
+      // Event name injected as title by ejs
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      filename: "./events.ejs",
+      template: "./src/views/events.ejs",
+      title: "Events from Webpack"
     }),
     new HtmlWebpackPlugin({
       inject: false,
