@@ -21,6 +21,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "jquery": "^3.4.1",
+    "mongodb": "^3.2.5",
     "startbootstrap-agency": "^5.1.0"
   },
   "devDependencies": {
