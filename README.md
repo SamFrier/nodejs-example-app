@@ -1,6 +1,6 @@
 # nodejs-example-app
 
-Basic web app using Node.js and Express.
+Example web app using Node.js and Express.
 
 ## Requirements
 
