@@ -92,36 +92,73 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Events</h2>
+            <h2 class="section-heading text-uppercase"><$=event.name$></h2>
             <h3 class="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
+              <$=event.description$>
             </h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="img/about/1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4><$=event.date$> | <$=event.time$></h4>
-                    <h4 class="subheading"><$=event.name$></h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      <$=event.description$>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+          <div class="col-lg">
+            <img
+              class="rounded img-fluid float-right"
+              src="<$=event.image$>"
+              alt=""
+            />
+          </div>
+          <div class="col-lg mx-auto">
+            <div class="row">
+              <div
+                class="col-lg-3 text-lg-right text-uppercase font-weight-bold"
+              >
+                <p>Date</p>
+              </div>
+              <div class="col-lg text-muted">
+                <p><$=event.date$></p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-3 text-lg-right text-uppercase font-weight-bold"
+              >
+                <p>Time</p>
+              </div>
+              <div class="col-lg text-muted">
+                <p><$=event.time$></p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-3 text-lg-right text-uppercase font-weight-bold"
+              >
+                <p>Duration</p>
+              </div>
+              <div class="col-lg text-muted">
+                <p><$=event.duration$></p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-3 text-lg-right text-uppercase font-weight-bold"
+              >
+                <p>Location</p>
+              </div>
+              <div class="col-lg text-muted">
+                <p>
+                  <$=event.location.streetAddr$><br /><$=event.location.city$><br /><$=event.location.zip$>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-3 text-lg-right text-uppercase font-weight-bold"
+              >
+                <p>Capacity</p>
+              </div>
+              <div class="col-lg text-muted">
+                <p><$=event.capacity$></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

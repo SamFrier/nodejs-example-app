@@ -1,5 +1,6 @@
 [
   {
+    "image": "img/about/1.jpg",
     "name": "Event 1",
     "description": "The first event",
     "date": "2019.01.01",
@@ -15,6 +16,7 @@
     "capacity": 100
   },
   {
+    "image": "img/about/2.jpg",
     "name": "Event 2",
     "description": "The second event",
     "date": "2019.02.02",
@@ -30,6 +32,7 @@
     "capacity": 200
   },
   {
+    "image": "img/about/3.jpg",
     "name": "Event 3",
     "description": "The third event",
     "date": "2019.03.03",
@@ -45,6 +48,7 @@
     "capacity": 300
   },
   {
+    "image": "img/about/4.jpg",
     "name": "Event 4",
     "description": "The fourth event",
     "date": "2019.04.04",

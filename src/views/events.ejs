@@ -104,16 +104,20 @@
               <$ events.forEach((event, index) => {$>
               <li class="<$=(index % 2 === 1 ? 'timeline-inverted' : '') $>">
                 <div class="timeline-image">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="img/about/1.jpg"
-                    alt=""
-                  />
+                  <a href="/events/<$=event._id$>">
+                    <img
+                      class="rounded-circle img-fluid"
+                      src="<$=event.image$>"
+                      alt=""
+                    />
+                  </a>
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4><$=event.date$> | <$=event.time$></h4>
-                    <h4 class="subheading"><$=event.name$></h4>
+                    <h4><$=event.name$></h4>
+                    <h4 class="subheading">
+                      <$=event.date$> | <$=event.time$>
+                    </h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">
