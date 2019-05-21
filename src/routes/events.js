@@ -14,7 +14,7 @@ eventRouter.use(
 /**
  * Retrieve all events
  */
-eventRouter.route("/").get((req, res) => {
+eventRouter.route("/").get((req, res, next) => {
   const url = "mongodb://" + dbConfig.host + ":" + dbConfig.port
   console.log("Connecting to MongoDB on " + url)
   mongo.connect(url, (err, client) => {
