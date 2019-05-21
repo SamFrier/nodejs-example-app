@@ -13,7 +13,7 @@ Basic web app using Node.js and Express.
 
 The `database` directory contains a Docker Compose file that can be used to run a MongoDB container:
 
-```
+```sh
 cd database
 docker-compose up
 ```
@@ -22,14 +22,22 @@ docker-compose up
 
 To build and run the app:
 
-### Inserting data
-
-```
+```sh
 npm install
-npm run build-start
+npm run build
+npm start
 ```
+
+Alternatively:
+```sh
+npm install
+npm run build-start # will automatically rebuild + reload the app on code changes
+```
+
 
 The app can then be accessed on the port specified in `config.json`.
+
+### Inserting data
 
 While the app is running, you can insert data into the database via **POST /db/events**, with the request body being a JSON array (see the `exampleData.json` file for an example). Remember to set the `Content-Type` header to `application/json`!
 

@@ -1,0 +1,7 @@
+{
+  "ext": "js,json,ejs",
+  "events": {
+    "restart": "webpack --config ./config/webpack.config.js"
+  },
+  "ignore": ["dist/**", "node_modules/**"]
+}
